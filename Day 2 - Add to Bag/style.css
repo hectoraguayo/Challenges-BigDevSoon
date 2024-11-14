@@ -1,0 +1,163 @@
+body {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  font: 600;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .image-container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 20px;
+  }
+  
+  .main-image {
+    flex: 1;
+    width: 60%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .image-container-left {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 10px;
+}
+  
+  .thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .thumbnail {
+    width: 60px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .product-info {
+    flex-basis: 50%;
+  }
+
+  .product-title {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-brand {
+    font-size: 14px;
+    color: #0352fc;
+    margin-bottom:0;
+  }
+  
+  .product-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .price-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.price-and-discount-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.price {
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.discount {
+    font-weight: bold;
+    flex-grow: 1;
+    font-size: 13px;
+    padding: 1px 3px 1px 3px;
+    color: #2777e4;
+    background-color: #afcbfb;
+    border-radius: 5px;
+}
+
+.old-price {
+    font-size: 14px;
+    color: #9f9f9f;
+    text-decoration: line-through;
+}
+  
+  .size-container {
+    margin-bottom: 10px;
+  }
+  
+  .size-title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .size-options {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .size-option {
+    width: 40px;
+    height: 40px;    
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+  }
+
+  .size-option:hover {
+    background-color: #333;
+    color: white;
+    border-radius: 0;
+  }
+  
+  .size-option.active {
+    background-color: black;
+    color: #fff;
+    border-radius: 0;
+  }
+  
+  .add-to-bag {
+    width: 100%;
+    height: 40px;
+    background-color: #1a55f7;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .add-to-bag:hover {
+    background-color: #053bcf;
+  }

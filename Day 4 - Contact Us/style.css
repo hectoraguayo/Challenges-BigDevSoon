@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 1920px;
+    height: 1080px;
+    background: -webkit-linear-gradient(180deg, #472adc,#490638);                       
+    background: linear-gradient(180deg, #472adc,#490638);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Media queries para adaptabilidad */
+@media (max-width: 1440px) {
+    .container {
+        width: 100vw;
+        height: auto;
+    }
+}
+
+@media (max-height: 1080px) {
+    .container {
+        height: 100vh;
+        width: auto;
+    }
+}
+
+.container__contact-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    min-height: 100%;
+}
+
+.contact-us__container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-top: 5rem;
+    margin-bottom: auto;
+}
+
+.text__title {
+    font-size: 4rem;
+    color: white;
+    font-weight: 500;
+}
+
+.text__subtitle {
+    font-size: 1.5rem;
+    /* padding-right: 19rem; */
+    color: white;
+    font-weight: 300;
+}
+
+.contact-us__container-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.contact-us__form {
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    width: 500px;
+    min-width: 200px;
+    max-width: 500px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+    border-radius: 20px;
+    padding: 40px;
+    /* margin: auto; */
+}
+
+.form__title {
+    padding: 0 0 20px 0;
+    color: #000000;
+    font-weight: 500;
+}
+
+.form_input {
+    margin-bottom: 15px;
+    border: 2px solid rgb(235, 234, 234);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.communication__title {
+    font-size: 15px;
+    font-weight: 500;
+    color:#5e5e5e;
+}
+
+.communication__inputs {
+    padding: 20px 0;
+}
+
+.communication__inputs label{
+    color: rgb(91, 91, 91);
+    padding-right: 30px;
+}
+
+.form__text-area {
+    border: 2px solid rgb(235, 234, 234);
+    border-radius: 15px;
+    padding: 10px;
+    height: 130px;
+}
+
+.form__button {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    background-color: #fe007a;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+
