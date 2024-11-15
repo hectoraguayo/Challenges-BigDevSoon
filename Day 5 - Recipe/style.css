@@ -1,3 +1,11 @@
+bds {
+    display: none; /* Si no es necesario mostrarlo */
+    height: 0;
+    width: 0;
+    margin: 0;
+    padding: 0;
+}
+
 * {
     margin: 0;
     padding: 0;
